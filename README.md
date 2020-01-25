@@ -4,7 +4,7 @@ Estudos dos principios SOLID em C#
 
 No projeto de Single Responsability Principle, vamos refatorar essa classe em outras classes dividindo suas responsabilidades e ganhando coesão no código, aqui ainda não vamos nos atentar aos outros principios. 
 
-  public class CalculadoraDeSalario
+    public class CalculadoraDeSalario
     {
         public double calcula(Funcionario funcionario)
         {

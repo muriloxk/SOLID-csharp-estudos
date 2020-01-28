@@ -139,5 +139,52 @@ No projeto de Interface Segregation, refatoro o código abaixo utilizando o prin
             return valor * 0.06;
         }
     }
+    
+    
+    # Open/close Principle e Dependency inversion principle  
+
+No projeto de open/close principle é refatorado o codigo abaixo e acabamos utilizando o principio de inversão de depêndencia também. 
+    
+    public class Compra
+    {
+        public string Cidade { get; set; }
+        public double Valor { get; set; }
+    }
+
+    public class CalculadoraDePrecos
+    {
+        public double Calcula(Compra produto)
+        {
+            TabelaDePrecoPadrao tabela = new TabelaDePrecoPadrao();
+            Frete correios = new Frete();
+
+            double desconto = tabela.DescontoPara(produto.Valor);
+            double frete = correios.Para(produto.Cidade);
+
+            return produto.Valor * (1 - desconto) + frete;
+        }
+    }
+     public class TabelaDePrecoPadrao
+    {
+        public double DescontoPara(double valor)
+        {
+            if(valor>5000) return 0.03;
+            if(valor>1000) return 0.05;
+            return 0;
+        }
+    }
+
+    public class Frete
+    {
+        public double Para(string cidade)
+        {
+
+            if ("SAO PAULO".Equals(cidade.ToUpper()))
+            {
+                return 15;
+            }
+            return 30;
+        }
+    }
 
 

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.InterfaceSegregationP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.OpenClosePrinciple", "Solid.OpenClosePrinciple\Solid.OpenClosePrinciple.csproj", "{FDBEB44D-FE5F-4471-AD11-A277816B4153}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid.ExercicioEncapsulamento", "Solid.ExercicioEncapsulamento\Solid.ExercicioEncapsulamento.csproj", "{D9E85990-D269-48A8-A0DB-F5859FEAE2F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{FDBEB44D-FE5F-4471-AD11-A277816B4153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDBEB44D-FE5F-4471-AD11-A277816B4153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDBEB44D-FE5F-4471-AD11-A277816B4153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E85990-D269-48A8-A0DB-F5859FEAE2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E85990-D269-48A8-A0DB-F5859FEAE2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E85990-D269-48A8-A0DB-F5859FEAE2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E85990-D269-48A8-A0DB-F5859FEAE2F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

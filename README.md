@@ -1,7 +1,7 @@
 # SOLID-csharp-estudos
 Estudos dos principios SOLID em C#
 
-    # Single Responsability Principle 
+   # Single Responsability Principle 
 
 No projeto de Single Responsability Principle, vamos refatorar essa classe em outras classes dividindo suas responsabilidades e ganhando coesão no código, aqui ainda não vamos nos atentar aos outros principios. 
 
@@ -47,7 +47,7 @@ No projeto de Single Responsability Principle, vamos refatorar essa classe em ou
         }
     }
     
-      # Interface Segregation Principle
+ # Interface Segregation Principle
 
 No projeto de Interface Segregation, refatoro o código abaixo utilizando o principio e o design pattern Observer. 
 
@@ -141,7 +141,7 @@ No projeto de Interface Segregation, refatoro o código abaixo utilizando o prin
     }
     
     
-    # Open/close Principle e Dependency inversion principle  
+  # Open/close Principle e Dependency inversion principle  
 
 No projeto de open/close principle é refatorado o codigo abaixo e acabamos utilizando o principio de inversão de depêndencia também. 
     
@@ -187,7 +187,7 @@ No projeto de open/close principle é refatorado o codigo abaixo e acabamos util
         }
     }
 
-    # Open/close Encapsulamento 
+  # Open/close Encapsulamento 
 
 No projeto exercicio encapsulamento, refatoramos esse código encapsulando regras e propriedades
     

@@ -187,4 +187,72 @@ No projeto de open/close principle é refatorado o codigo abaixo e acabamos util
         }
     }
 
+    # Open/close Encapsulamento 
+
+No projeto exercicio encapsulamento, refatoramos esse código encapsulando regras e propriedades
+    
+
+     public class ProcessadorDeBoletos
+    {
+         public void Processa(List<Boleto> boletos, Fatura fatura) 
+         {
+            double total = 0;
+
+            foreach(Boleto boleto in boletos) {
+                Pagamento pagamento = new Pagamento(boleto.Valor, MeioDePagamento.BOLETO);
+                fatura.Pagamentos.Add(pagamento);
+
+                total += boleto.Valor;
+            }
+
+            if(total >= fatura.Valor) {
+                fatura.Pago = true;
+            }
+        }
+    }
+
+    public class Boleto
+    {
+        public double Valor { get; private set; }
+
+        public Boleto(double valor)
+        {
+            this.Valor = valor;
+        }
+    }
+
+    public class Fatura
+    {
+        public string Cliente { get; private set; }
+        public double Valor { get; set; }
+        public List<Pagamento> Pagamentos { get; private set; }
+        public bool Pago { get; set; }
+
+        public Fatura(string cliente,double valor)
+        {
+            this.Cliente = cliente;
+            this.Valor = valor;
+            this.Pagamentos = new List<Pagamento>();
+            this.Pago = false;
+        }
+    }
+
+    public enum MeioDePagamento
+    {
+        BOLETO,
+        CARTAO
+    }
+
+    public class Pagamento
+    {
+        public double Valor { get; private set; }
+        public MeioDePagamento Forma { get; private set; }
+
+        public Pagamento(double valor, MeioDePagamento forma)
+        {
+            // TODO: Complete member initialization
+            this.Valor = valor;
+            this.Forma = forma;
+        }
+    }
 

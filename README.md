@@ -300,7 +300,7 @@ No projeto exercicio encapsulamento, refatoramos esse código encapsulando regra
         }
 }
 
-class ContaEstudante : ContaComum
+      class ContaEstudante : ContaComum
     {
         public int Milhas { get; private set; }
 
@@ -312,7 +312,7 @@ class ContaEstudante : ContaComum
         }
     }
 
-class ContaComum
+      class ContaComum
     {
         public double Saldo { get; private set; }
 

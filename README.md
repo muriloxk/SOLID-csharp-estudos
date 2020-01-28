@@ -259,7 +259,7 @@ No projeto exercicio encapsulamento, refatoramos esse código encapsulando regra
     
    # Liskov substitution principle 
    
-  No projeto de Liskov Substitution principle, temos que refatorar esse código para que o código do main não seja quebrado por uma herança mal feita.
+  No projeto de Liskov Substitution principle, refatoramos o código abaixo para que o código no metodo main não seja quebrado por uma herança que não respeita o prinpicio de Liskov.
     
     public class ProcessadorDeInvestimentos {
 
